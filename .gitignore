@@ -1,0 +1,26 @@
+
+# Local development settings
+.env
+.venv
+
+# Django database
+db.sqlite3
+
+# Logs
+*.log
+
+# Ignore Django migrations except for __init__.py
+**/migrations/*.py
+**/migrations/__init__.py
+
+# Ignore all local settings
+**/local_settings.py
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore pycache directories
+__pycache__/
+**/__pycache__/
+# Ignore compiled Python files
+*.pyc

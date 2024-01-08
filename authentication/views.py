@@ -39,7 +39,7 @@ class UserLoginView(APIView):
                 return Response({'msg':'Login Success','token': token}, status=status.HTTP_200_OK)
             else:
                 return Response({'errors':{'non_fields_errors':['Email or Password is not Valid']}}, status=status.HTTP_404_NOT_FOUND)
-
+    
 class UserProfileView(APIView):
     renderer_classes = [UserRenderer]
     permission_classes = [IsAuthenticated]
